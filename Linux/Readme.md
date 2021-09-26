@@ -1,4 +1,4 @@
-## Week 3 Homework: A High Stakes Investigation
+## Linux/Bash assignment: A High Stakes Investigation
 
 ### Scenario
 
@@ -32,11 +32,11 @@ Lucky Duck Casino has provided you with the following files if required:
     - Username: `sysadmin`
     - Password: `cybersecurity`
 
-### Instructions 
+### Instructions
 
-Use your command-line skills to uncover the identities of the rogue casino player and dealer colluding to scam Lucky Duck out of thousands of dollars. 
+Use your command-line skills to uncover the identities of the rogue casino player and dealer colluding to scam Lucky Duck out of thousands of dollars.
 
-After your investigation, you will provide a summary of your findings to the casino. 
+After your investigation, you will provide a summary of your findings to the casino.
 
 #### Step 1: Investigation Preparation
 
@@ -73,7 +73,7 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
 2. The `Dealer_Schedules_0310` and `Roulette_Player_WinLoss_0310` directories contain the dealer schedules and win/loss player data from the roulette tables during the week of March 10.
 
      -  Since the losses occurred on March 10, 12, and 15, move the schedules for those days into the directory `Dealer_Analysis`.
-     
+
     - Move the files for those days into the directory `Player_Analysis`.
 
 #### Step 3: Correlating the Evidence
@@ -98,7 +98,7 @@ Complete the player analysis.
         - The total count of times this player was playing.
           - **Hint:** Use the `wc` command to find this value.
 
-Complete the dealer analysis. 
+Complete the dealer analysis.
   1. Navigate to the `Dealer_Analysis` directory.
 
   2. This file contains the dealer schedules for the various Lucky Duck casino games: Blackjack, Roulette, and Texas Hold 'Em.
@@ -119,14 +119,14 @@ Complete the dealer analysis.
   5. Run all of the scripts and append those results to a file called `Dealers_working_during_losses`.
 
   6. Preview your file `Dealers_working_during_losses` and analyze the data.
-  
+
       - Record in the `Notes_Dealer_Analysis` file:
 
         - The primary dealer working at the times where losses occurred.
 
         - How many times the dealer worked when major losses occurred.
 
-3. Complete the player/employee correlation. 
+3. Complete the player/employee correlation.
 
    - In the notes file of the `Player_Dealer_Correlation` directory, add a summary of your findings noting the player and dealer you believe are colluding to scam Lucky Duck.
 
