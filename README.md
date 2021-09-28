@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-   ! (Ansible/filebeat-playbook.yml) _TODO: Enter the playbook file._ 
+   ! (Ansible/filebeat-playbook.yml) _TODO: Enter the playbook file._
 
 This document contains the following details:
 - Description of the Topology
@@ -33,7 +33,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | Web1     |   DVWA   | 10.0.0.5   | Linux            |
 | Web2     |   DVWA   | 10.0.0.7   | Linux            |
 | ELK      |System log| 10.1.0.4   | Linux            |
@@ -63,12 +63,17 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Configure Elk VM with Docker.
+- Install docker.io.
+- Install python3-pip.
+- Install Docker module.
+- Increase virtual memory.
+- Download and launch a docker elk container.
+- Enable service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Diagrams/Elk_contaoner.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
