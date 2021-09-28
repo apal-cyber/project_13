@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-   ! (Ansible/filebeat-playbook.yml) _TODO: Enter the playbook file._
+https://github.com/apal-cyber/project_13/blob/b9571a961c72b4d3a2cfc199535d1df5166d68b4/Ansible/filebeat-playbook.yml _TODO: Enter the playbook file._
 
 This document contains the following details:
 - Description of the Topology
@@ -34,9 +34,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web1     |   DVWA   | 10.0.0.5   | Linux            |
-| Web2     |   DVWA   | 10.0.0.7   | Linux            |
-| ELK      |System log| 10.1.0.4   | Linux            |
+| Web1     | Server   | 10.0.0.5   | Linux            |
+| Web2     | Server   | 10.0.0.7   | Linux            |
+| ELK      | Server   | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -52,7 +52,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box |     No              | 10.0.0.1 10.0.0.2    |
 |          |                     |                      |
 |          |                     |                      |
 
@@ -83,6 +83,10 @@ We have installed the following Beats on these machines:
 - Metricbeat and Filebeat _TODO: Specify which Beats you successfully installed_
 
 These Beats allow us to collect the following information from each machine:
+- Metricbeat periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+
+- Filebeat is for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 ### Using the Playbook
