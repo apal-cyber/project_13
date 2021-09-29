@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![ELK diagram](Diagrams/ELK.jpg)
+![ELK diagram](project_13/Diagrams/ELK.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as [Filebeat](https://github.com/apal-cyber/project_13/blob/b9571a961c72b4d3a2cfc199535d1df5166d68b4/Ansible/filebeat-playbook.yml).
 
@@ -42,7 +42,7 @@ Only the Jump box machine can accept connections from the Internet. Access to th
 - 138.91.172.192 or any other whitelisted IP addresses.
 
 Machines within the network can only be accessed by docker container within Jump Box.
-- 10.0.0.4 
+- 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -71,7 +71,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker-ps](Diagrams/Elk_container.jpg)
+![docker-ps](project_13/Diagrams/Elk_container.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
