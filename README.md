@@ -1,7 +1,7 @@
 ## Cloud network
 
 
-This is a collection of Linux Scripts from my Cyber Security boot camp.
+This is a collection of YAML Scripts from my Cyber Security boot camp.
 
 Most of the scripts are used to configure cloud servers with different  docker containers.
 
